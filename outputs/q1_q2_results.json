@@ -1,0 +1,318 @@
+{
+  "rows_raw": 1138,
+  "rows_clean": 1125,
+  "label_counts": {
+    "classical": 890,
+    "ai": 235
+  },
+  "median_words_raw": 152.0,
+  "median_words_clean": 85.0,
+  "chi2_top": [
+    {
+      "term": "machine",
+      "chi2": 397.7,
+      "ai_docs_%": 29.8,
+      "classical_docs_%": 0.0
+    },
+    {
+      "term": "learn",
+      "chi2": 380.6,
+      "ai_docs_%": 39.1,
+      "classical_docs_%": 2.5
+    },
+    {
+      "term": "network",
+      "chi2": 376.1,
+      "ai_docs_%": 28.1,
+      "classical_docs_%": 0.8
+    },
+    {
+      "term": "neural",
+      "chi2": 350.3,
+      "ai_docs_%": 25.5,
+      "classical_docs_%": 0.1
+    },
+    {
+      "term": "algorithm",
+      "chi2": 290.9,
+      "ai_docs_%": 20.0,
+      "classical_docs_%": 0.4
+    },
+    {
+      "term": "method",
+      "chi2": 278.0,
+      "ai_docs_%": 39.1,
+      "classical_docs_%": 13.5
+    },
+    {
+      "term": "regression",
+      "chi2": 189.4,
+      "ai_docs_%": 29.4,
+      "classical_docs_%": 9.7
+    },
+    {
+      "term": "gold",
+      "chi2": 183.0,
+      "ai_docs_%": 6.4,
+      "classical_docs_%": 1.0
+    },
+    {
+      "term": "ann",
+      "chi2": 169.3,
+      "ai_docs_%": 6.8,
+      "classical_docs_%": 0.1
+    },
+    {
+      "term": "lstm",
+      "chi2": 166.6,
+      "ai_docs_%": 9.4,
+      "classical_docs_%": 0.0
+    },
+    {
+      "term": "svr",
+      "chi2": 151.5,
+      "ai_docs_%": 5.1,
+      "classical_docs_%": 0.0
+    },
+    {
+      "term": "forest",
+      "chi2": 143.9,
+      "ai_docs_%": 8.5,
+      "classical_docs_%": 0.0
+    },
+    {
+      "term": "artificial",
+      "chi2": 135.4,
+      "ai_docs_%": 10.2,
+      "classical_docs_%": 0.2
+    },
+    {
+      "term": "quantile",
+      "chi2": 119.4,
+      "ai_docs_%": 4.7,
+      "classical_docs_%": 0.1
+    },
+    {
+      "term": "bitcoin",
+      "chi2": 113.6,
+      "ai_docs_%": 3.0,
+      "classical_docs_%": 0.0
+    }
+  ],
+  "chi2_classical": [
+    "monetary",
+    "policy",
+    "shock",
+    "effect",
+    "wage",
+    "nominal",
+    "real",
+    "theory",
+    "fiscal",
+    "labor",
+    "run",
+    "expectation"
+  ],
+  "n_train": 900,
+  "n_test": 225,
+  "n_test_ai": 47,
+  "baseline": {
+    "train": {
+      "accuracy": 0.9644444444444444,
+      "precision": 0.9020618556701031,
+      "recall": 0.9308510638297872,
+      "f1": 0.9162303664921466,
+      "macro_f1": 0.9468316853617291
+    },
+    "test": {
+      "accuracy": 0.8711111111111111,
+      "precision": 0.6875,
+      "recall": 0.7021276595744681,
+      "f1": 0.6947368421052632,
+      "macro_f1": 0.8065233506300964
+    },
+    "cv_f1": 0.766745014005288,
+    "cv_f1_std": 0.040473203598706785,
+    "cv_acc": 0.9044444444444444
+  },
+  "table21": [
+    {
+      "model": "Baseline (NB + counts)",
+      "cv_f1": 0.767,
+      "train_f1": 0.916,
+      "test_f1": 0.695,
+      "test_accuracy": 0.871,
+      "test_precision": 0.688,
+      "test_recall": 0.702
+    },
+    {
+      "model": "Logistic Regression",
+      "cv_f1": 0.428,
+      "train_f1": 0.633,
+      "test_f1": 0.379,
+      "test_accuracy": 0.84,
+      "test_precision": 1.0,
+      "test_recall": 0.234
+    },
+    {
+      "model": "Linear SVM",
+      "cv_f1": 0.789,
+      "train_f1": 1.0,
+      "test_f1": 0.725,
+      "test_accuracy": 0.902,
+      "test_precision": 0.879,
+      "test_recall": 0.617
+    },
+    {
+      "model": "Random Forest",
+      "cv_f1": 0.698,
+      "train_f1": 1.0,
+      "test_f1": 0.676,
+      "test_accuracy": 0.898,
+      "test_precision": 1.0,
+      "test_recall": 0.511
+    },
+    {
+      "model": "Gradient Boosting",
+      "cv_f1": 0.765,
+      "train_f1": 0.953,
+      "test_f1": 0.675,
+      "test_accuracy": 0.884,
+      "test_precision": 0.818,
+      "test_recall": 0.574
+    }
+  ],
+  "table22": [
+    {
+      "model": "Logistic Regression",
+      "cv_f1": 0.781,
+      "train_f1": 0.974,
+      "test_f1": 0.735,
+      "test_accuracy": 0.884,
+      "test_precision": 0.706,
+      "test_recall": 0.766
+    },
+    {
+      "model": "Linear SVM",
+      "cv_f1": 0.808,
+      "train_f1": 0.997,
+      "test_f1": 0.736,
+      "test_accuracy": 0.898,
+      "test_precision": 0.8,
+      "test_recall": 0.681
+    },
+    {
+      "model": "Random Forest",
+      "cv_f1": 0.657,
+      "train_f1": 1.0,
+      "test_f1": 0.648,
+      "test_accuracy": 0.889,
+      "test_precision": 0.958,
+      "test_recall": 0.489
+    },
+    {
+      "model": "Gradient Boosting",
+      "cv_f1": 0.748,
+      "train_f1": 1.0,
+      "test_f1": 0.753,
+      "test_accuracy": 0.898,
+      "test_precision": 0.761,
+      "test_recall": 0.745
+    }
+  ],
+  "cmp22": [
+    {
+      "model": "Logistic Regression",
+      "CV F1 before": 0.428,
+      "CV F1 after": 0.781,
+      "test F1 before": 0.379,
+      "test F1 after": 0.735,
+      "test recall before": 0.234,
+      "test recall after": 0.766
+    },
+    {
+      "model": "Linear SVM",
+      "CV F1 before": 0.789,
+      "CV F1 after": 0.808,
+      "test F1 before": 0.725,
+      "test F1 after": 0.736,
+      "test recall before": 0.617,
+      "test recall after": 0.681
+    },
+    {
+      "model": "Random Forest",
+      "CV F1 before": 0.698,
+      "CV F1 after": 0.657,
+      "test F1 before": 0.676,
+      "test F1 after": 0.648,
+      "test recall before": 0.511,
+      "test recall after": 0.489
+    },
+    {
+      "model": "Gradient Boosting",
+      "CV F1 before": 0.765,
+      "CV F1 after": 0.748,
+      "test F1 before": 0.675,
+      "test F1 after": 0.753,
+      "test recall before": 0.574,
+      "test recall after": 0.745
+    }
+  ],
+  "best_name": "Linear SVM",
+  "best_test": {
+    "accuracy": 0.8977777777777778,
+    "precision": 0.8,
+    "recall": 0.6808510638297872,
+    "f1": 0.735632183908046,
+    "macro_f1": 0.8361356511826732
+  },
+  "best_train": {
+    "accuracy": 0.9988888888888889,
+    "precision": 0.9947089947089947,
+    "recall": 1.0,
+    "f1": 0.9973474801061007,
+    "macro_f1": 0.9983223697087074
+  },
+  "repeated": {
+    "base_mean": 0.7452992799271798,
+    "base_std": 0.03377724945718799,
+    "best_mean": 0.7800487124812447,
+    "best_std": 0.03085349611408432,
+    "wins": 12,
+    "gain": 0.03474943255406483
+  },
+  "top_ai_terms": [
+    "network",
+    "learn",
+    "neural network",
+    "neural",
+    "algorithm",
+    "quantile",
+    "sentiment",
+    "machine",
+    "machine learn",
+    "lstm",
+    "nonparametric",
+    "cluster",
+    "ann",
+    "review",
+    "method"
+  ],
+  "top_classical_terms": [
+    "uncertainty",
+    "policy",
+    "horizon",
+    "cost",
+    "real",
+    "nominal",
+    "suggest",
+    "current",
+    "city",
+    "consumption",
+    "growth",
+    "post",
+    "hypothesis",
+    "estimate",
+    "expect"
+  ]
+}
